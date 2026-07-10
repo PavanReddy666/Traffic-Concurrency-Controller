@@ -1,6 +1,6 @@
 # 🚦 Traffic Concurrency Controller
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![OS Concepts](https://img.shields.io/badge/OS_Concurrency-Multi--Threading-blue?style=for-the-badge)
 
 ## 📖 About the Project
@@ -11,22 +11,22 @@ This simulation models real-world constraints where multiple processes (vehicles
 ## ⚙️ Algorithms & Core Concepts
 This project relies on several key concurrency control mechanisms to manage traffic safely:
 
-* **Resource Allocation & Deadlock Prevention:** [Explain your approach here. e.g., Implemented a strict resource ordering protocol to ensure vehicles claiming intersection zones cannot form a circular wait state.]
-* **Thread Synchronization:** Utilizes [Locks / Semaphores / Monitors] to guarantee mutual exclusion when a thread enters a critical section (the intersection).
-* **Scheduling Logic:** [Explain how you decide who goes next. e.g., Applied a First-Come-First-Serve (FCFS) queue alongside a starvation-prevention mechanism for heavy-traffic lanes.]
+* **Resource Allocation & Deadlock Prevention:** Implemented a strict resource ordering protocol to ensure vehicles claiming intersection zones cannot form a circular wait state.
+* **Thread Synchronization:** Utilizes concurrency primitives like `Locks` and `Semaphores` to guarantee mutual exclusion when a thread enters a critical section (the intersection).
+* **Scheduling Logic:** Applied a First-Come-First-Serve (FCFS) queue alongside a starvation-prevention mechanism to ensure heavy-traffic lanes do not indefinitely block other vehicles.
 
 ## 🛠️ Implementation Details
-The simulation is built entirely in **Java**, leveraging its built-in concurrency libraries. 
+The simulation is built entirely in **Python**, leveraging its standard libraries to handle concurrent execution.
 
-* **Threads & Runnables:** Each vehicle is instantiated as an independent thread simulating its lifecycle (arrival, waiting, crossing, exiting).
-* **Concurrency Utilities:** Heavily utilized `java.util.concurrent` [or `synchronized` blocks / `wait()` and `notifyAll()`] to manage thread states and state transitions efficiently.
-* **Shared State Management:** The intersection acts as a shared resource matrix, with strict access protocols to maintain thread safety across concurrent reads and writes.
+* **Threads & Execution:** Each vehicle is instantiated as an independent thread using Python's `threading.Thread`, simulating its lifecycle (arrival, waiting, crossing, exiting).
+* **Concurrency Utilities:** Heavily utilized `threading.Lock()` and `threading.Condition()` to manage thread states, state transitions, and safe resource sharing efficiently.
+* **Shared State Management:** The intersection acts as a shared resource matrix, with strict access protocols to maintain thread safety across concurrent reads and writes, carefully accounting for Python's Global Interpreter Lock (GIL) mechanics.
 
 ## 🚀 Setup Procedure
-Follow these instructions to compile and run the simulation on your local machine.
+Follow these instructions to run the simulation on your local machine.
 
 ### Prerequisites
-* Java Development Kit (JDK) 8 or higher installed on your system.
+* **Python 3.x** installed on your system. 
 
 ### Installation & Execution
 1. **Clone the repository:**
