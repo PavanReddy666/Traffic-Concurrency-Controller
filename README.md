@@ -33,3 +33,5 @@ Follow these instructions to run the simulation on your local machine.
    ```bash
    git clone [https://github.com/sathwikchilapuram1-hue/Traffic-Concurrency-Controller.git](https://github.com/sathwikchilapuram1-hue/Traffic-Concurrency-Controller.git)
    cd Traffic-Concurrency-Controller
+
+#    Built by [sathwikchilapuram](https://github.com/sathwikchilapuram)
