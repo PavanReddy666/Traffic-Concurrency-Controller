@@ -34,4 +34,4 @@ Follow these instructions to run the simulation on your local machine.
    git clone [https://github.com/sathwikchilapuram1-hue/Traffic-Concurrency-Controller.git](https://github.com/sathwikchilapuram1-hue/Traffic-Concurrency-Controller.git)
    cd Traffic-Concurrency-Controller
 
-#    Built by [sathwikchilapuram](https://github.com/sathwikchilapuram)
+Built by [sathwikchilapuram](https://github.com/sathwikchilapuram) , [PavanReddy666](https://github.com/PavanReddy666) and [partheevg03](https://github.com/partheevg03)
